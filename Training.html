@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMM Company</title>
+    <!-- Adding Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/careers.css">
+    <link rel="stylesheet" href="Css/responsive.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Header Start  -->
+    <section class="header ">
+
+        <!-- Header Navigation Start  -->
+
+        <div class="container header-nav" >
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-expand-lg  main-menu fixed-top " style="background-color: #61a0ff; padding-top: 1%;">
+                        <div class="container" >
+                            <a href="#" class="navbar-brand">
+                                <img src="image/rr.png" alt=" MMm Company">
+                            </a>
+                            <button class="navbar-toggler" data-toggle="collapse" data-target="#beeToggler">
+                                <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="beeToggler">
+                                <ul class="navbar-nav ml-auto ">
+                                    <li><a href="main.html">Home</a></li>
+                                    &nbsp;
+                                    <li>
+                                        <div class="dropdown1">
+                                            <button onclick="myFunction1()" class="dropbtn1">Company</button>
+                                            <div id="myDropdown1" class="dropdown-content1">
+                                              <a href="Overview.html">Overview</a>
+                                              <a href="OurTeam.html">Our Team</a>
+                                            </div>
+                                          </div>
+                                    </li>
+                                    &nbsp;
+                                    <li><a href="Products.html">Products</a></li>
+                                    
+                                    &nbsp;
+                                    <li>
+                                        <div class="dropdown2">
+                                            <button onclick="myFunction2()" class="dropbtn2">Careers</button>
+                                            <div id="myDropdown2" class="dropdown-content2">
+                                              <a href="Jop.html">Find Jop</a>
+                                              <a href="Training.html">Training</a>
+                                              <a href="Internship.html">Find Internship</a>
+                                            </div>
+                                          </div>
+                                    </li>
+                                    <li>
+                                        <a href="ContactUs.html">
+                                        <button class="nav-button">Contact Us <i class="fas fa-angle-right"></i> </button>
+                                        </a>
+                                    </li>
+                                    &nbsp;
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header Navigation End  -->
+
+        
+         <!-- Header Banner Start  -->
+
+         <div class="container header-content ">
+            <div class="row h-100">
+                <div class="col-md-6 centralize">
+                    <div class="left-content ">
+                        <h2>T<span class="highlight">raining</span>
+                        </h2>
+                        <p>
+                            <a href="main.html">Home</a> / Careers / Training
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 centralize">
+                    <div class="right-content">
+                        <img src="image/banner.png" style="width: 100%;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Header End  -->
+
+    <!--Body of Training [Css => Careers.css]-->
+
+    <section id="train-heading" class="train-heading" style="padding:  0 10% 10%; ">
+        <h1 class="heading">Our Training</h1>
+        <p style= "text-align: center; font-size: 25px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, obcaecati, non quam ad veniam nihil esse incidunt placeat eaque ducimus sequi reiciendis sint, quo eligendi ut pariatur harum iusto perferendis.</p>
+    </section>
+    
+    <div class="train" style="background-color: #61a0ff;"> 
+        <div class="train-form">
+            
+            <form action="./train.php" method="POST" enctype="multipart/form-data">
+                
+                <input type="text" name="name" placeholder="Name" class="train-form-txt" required>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="Mobile Phone" maxlength="10" class="train-form-phone" style="height: 5%;">
+                <input type="email" name="email" placeholder="Email" class="train-form-email" required>
+                
+                <h2 class="name">Apply For Which Post?</h2>
+                <input type="text" name="Position" placeholder="Position" class="train-form-txt" required>
+
+                <div class="radio-class" >
+
+                    <h2 class="name">Gender</h2>
+                    
+                    <div class="form-check" style="margin-left: 5%; font-size: 25px;">
+                        <input type="radio" class="form-check-input" id="radio1" name="optradio" value="Male" checked>
+                        <label class="form-check-label" for="radio1">Male</label>
+                    </div>
+
+                    <div class="form-check"  style="margin-left: 5%; font-size: 25px;">
+                        <input type="radio" class="form-check-input" id="radio2" name="optradio" value="Female">
+                        <label class="form-check-label" for="radio2">Female</label>
+                    </div>
+
+                </div>
+
+                <input type="text" name="name" placeholder="Faculty" class="train-form-txt" required style="margin-top: 18%;">
+                <input type="text" name="name" placeholder="University" class="train-form-txt" required>
+
+                <h2 class="name">Graduation Year:</h2>
+                <input type="date" id="Graduation" name="Graduation" class="train-form-txt">
+                <input type="submit" value="Submit" name="submit" class="train-form-btn">
+            </form>
+        </div>
+    </div>
+
+    <!--End of Body of Training-->
+
+
+<!-- Footer Start  -->
+
+<section class="footerDesign section-padding" style="background-image: url(image/qq.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;" >
+
+    <div class="container" >
+    
+      <div class="row" style="margin-top: 5%;">
+          <div class="col-md-3 firstCol">
+              <div class="footer-widget-1">
+                  <img src="image/rr.png" alt="">
+                  <p>
+                      Lorem ipsum dolor sit, consectet dignissim.consectet adipiscing Cras dignissim.
+                  </p>
+              </div>
+          </div>
+          <div class="col-md-3 secondCol">
+              <div class="footer-widget-2">
+                  <h3>Quick Links</h3>
+                  <ul style="padding-left: 5%;">
+                      <li><a href="Overview.html" style="text-decoration: none;">Overview</a></li>
+                      <li><a href="OurTeam.html" style="text-decoration: none;">Our Team</a></li>
+                      <li><a href="Products.html" style="text-decoration: none;">Products</a></li>
+                  </ul>
+              </div>
+          </div>
+
+          <div class="col-md-3 thirdCol">
+              <div class="footer-widget-4">
+                  <h3 style="color:  #000; font-weight: 700;">Contact Us</h3>
+                  <p>
+                      info@leadsbee.com <br> 07/409 jhfsf Egypt
+                  </p>
+                  <ul>
+                      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                  </ul>
+              </div>
+          </div>
+
+          <div class="col-md-3 forthCol">
+            <div class="footer-widget-3">
+              <h3>Subscribe for our latest news and updates</h3>
+              <form action="/action_page.php">
+                <input type="text" id="name" name="name" placeholder="Name" style="margin-bottom: 2%;">
+                <input type="email" id="email" name="email" placeholder="E-mail Address"  required style="margin-bottom: 2%;">
+                <input type="submit" value="Submit">
+              </form>
+            </div>
+          </div>
+      </div>
+      
+          <div class="row" style="border-top: 1px solid rgb(122, 122, 122); margin-top: 5%;">
+          <div class="col-md-10">
+              <div class="copyright-text">
+                  <p>
+                      Copyright © 2022 Leadsbee Design Company, All Rights Reserved.
+                  </p>
+              </div>
+          </div>
+    </div>
+  </div>
+    </section>
+
+    <!-- Footer End  -->
+
+<!--Adding Scripts-->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"></script>
+<script src="./asset/js/main.js"></script>
+<script src="Js/theme.js"></script>
+
+</body>
+
+</html>
